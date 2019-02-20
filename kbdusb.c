@@ -472,7 +472,7 @@ int main() {
 
     if (DEBUG) printf("Num bytes reported: %i\n", ibytes_reported);
 
-    if (ibytes_reported == 9) { /* a regular key, 8 bytes + 0x71 */
+    if (ibytes_reported == 8) { /* a regular key, 8 bytes */
       /* start at 2 to skip length and = */
       for (int i = 2; i < ibytes_reported * 2; i += 2) {
         char c1[2], c2[2];

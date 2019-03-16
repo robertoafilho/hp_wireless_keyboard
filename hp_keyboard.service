@@ -8,6 +8,9 @@ User=root
 WorkingDirectory=/
 ExecStart=/bin/bash /usr/local/bin/hp_keyboard.sh
 Restart=on-abort
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=hp_keyboard
 
 [Install]
 WantedBy=multi-user.target

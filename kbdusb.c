@@ -9,6 +9,7 @@
 #include <unistd.h>
 
 #define DEBUG 0
+//#define DEBUG 1
 /* #define CHECK_BIT(var,pos) ((var) & (1<<(pos))) */
 #define TEST_BIT(var, bitval) ((var & bitval) == bitval)
 /*int mapshiftkey(unsigned char keypressed) {
@@ -170,7 +171,8 @@ int mapkey(const unsigned char keypressed) {
     case 0x35:
       keysent = KEY_GRAVE;
       break;
-    case 0x32:
+    //case 0x32:
+    case 0x31:
       keysent = KEY_BACKSLASH;
       break;
     case 0x36:
@@ -227,10 +229,12 @@ int mapkey(const unsigned char keypressed) {
     case 0x45:
       keysent = KEY_F12;
       break;
-    case 0x53:
+    //case 0x53:
+    case 0x47:
       keysent = KEY_NUMLOCK;
       break;
-    case 0x47:
+    //case 0x47:
+    case 0x53:
       keysent = KEY_SCROLLLOCK;
       break;
     case 0x5f:
